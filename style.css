@@ -42,10 +42,26 @@ header {
   background: transparent;
   /* background-color: transparent; */
   top: 0;
-  box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.5);
+  /* box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.5); */
   /* background: rgba(255, 255, 255, 0.9); */
   /* backdrop-filter: blur(5px); */
   /* background-color: rgba(0, 0, 0, 0.1); */
+}
+
+header:hover {
+  /* glass effect  */
+  background: rgba(255, 255, 255, 0.2);
+  /* semi-transparent */
+  border-radius: 16px;
+  /* smooth corners */
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  /* soft shadow */
+  backdrop-filter: blur(6px);
+  /* blur background */
+  -webkit-backdrop-filter: blur(6px);
+  /* Safari support */
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  /* soft border */
 }
 
 header section.logo {
@@ -560,7 +576,7 @@ footer div.footer-container p {
   overflow-x: auto;
 
   /* glass effect  */
-  background: rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.469);
   /* semi-transparent */
   border-radius: 16px;
   /* smooth corners */
@@ -1518,6 +1534,17 @@ a#name:focus {
 
   .projects-list h1 {
     margin-top: 15%;
+  }
+
+  .about-container #info {
+    padding-right: 10%;
+  }
+
+
+  #drop-mail a {
+    padding: 5px;
+    /* padding-right: 100px; */
+    font-size: 2px;
   }
 
   /* Skills */
