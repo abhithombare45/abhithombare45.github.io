@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Project 1: Bangalore House Price Prediction</title>
+
+  <!-- Fonts & CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=GFS+Didot&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
+    rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=GFS+Didot&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="../style.css" />
+</head>
+
+<body class="BHPP">
+  <!-- Header -->
+  <header>
+    <div class="header-container">
+      <section class="logo">
+        <a href="../index.html"><strong>abhithombare45</strong></a>
+      </section>
+      <ul class="desktop-view">
+        <li class="dropdown">
+          <a href="./../projects.html" id="project-button" href="#" aria-haspopup="true"
+            aria-expanded="false">Projects</a>
+          <div class="dropdown-content">
+            <!-- <div class="dropdown-column-ML"> -->
+            <div class="dropdown-column">
+              <h3>ML Projects</h3>
+              <a href="projects/BHPP.html">House Price Prediction</a>
+              <a href="projects/project2.html" target="_blank">House Price Prediction</a>
+              <a href="projects/project3.html" target="_blank">House Price Prediction</a>
+            </div>
+            <!-- <div class="dropdown-column-NLP"> -->
+            <div class="dropdown-column">
+              <h3>NLP Projects</h3>
+              <a href="projects/project4.html" target="_blank">House Price Prediction</a>
+              <a href="projects/project5.html" target="_blank">House Price Prediction</a>
+              <a href="projects/project6.html" target="_blank">House Price Prediction</a>
+            </div>
+            <!-- <div class="dropdown-column-LLM"> -->
+            <div class="dropdown-column">
+              <h3>Gen AI & LLM Projects</h3>
+              <a href="projects/project7.html" target="_blank">House Price Prediction</a>
+              <a href="projects/project8.html" target="_blank">House Price Prediction</a>
+              <a href="projects/project9.html" target="_blank">House Price Prediction</a>
+              <a href="projects/project10.html" target="_blank">House Price Prediction</a>
+            </div>
+            <div class="dropdown-column">
+              <h3>Time Series Projects</h3>
+              <a href="projects/project7.html" target="_blank">House Price Prediction</a>
+              <a href="projects/project8.html" target="_blank">House Price Prediction</a>
+              <a href="projects/project9.html" target="_blank">House Price Prediction</a>
+              <a href="projects/project10.html" target="_blank">House Price Prediction</a>
+            </div>
+          </div>
+        </li>
+      </ul>
+
+      <!-- Menu Button -->
+      <div class="menu-icon" onclick="toggleMenu()">
+        <i id="menu-toggle-icon" class="fa-solid fa-bars"></i>
+      </div>
+
+      <!-- Menu Area -->
+      <ul class="menu-area">
+        <!-- <li><a href="./../index.html">Home</a></li> -->
+        <li><a href="./../projects.html">Projects</a></li>
+        <li><a href="./../skills.html">Skills</a></li>
+      </ul>
+
+
+    </div>
+  </header>
+
+  <!-- Project Main Section -->
+  <main class="project-main">
+    <div class="project-header">
+      <div class="project-logo">
+        <img src="../assets/images/BHPP.jpg" alt="Project Logo" />
+      </div>
+      <div class="project-title">
+        <h1>Project 1: Bangalore House Price Prediction</h1>
+      </div>
+    </div>
+
+    <div class="project-description">
+      <p>
+        This project is an end-to-end machine learning application that predicts
+        house prices in Bangalore based on features such as location, size, and
+        amenities.
+      </p>
+      <p>
+        It is built using <strong>Python, Pandas, Scikit-learn</strong> for
+        model training and deployed with <strong>Flask, Gunicorn, and NGINX on AWS EC2</strong>.
+      </p>
+      <p>
+        Key highlights include:
+      </p>
+      <ul>
+        <li>Data preprocessing & feature engineering</li>
+        <li>Hyperparameter tuning for regression models</li>
+        <li>Interactive web interface with Flask</li>
+        <li>Full-stack deployment pipeline (EC2 + NGINX + Gunicorn)</li>
+      </ul>
+      <a href="https://github.com/abhithombare45/BHP" target="_blank" class="btn-project">View on
+        GitHub</a>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-container">
+      <p>© Abhijeet Thombare 2025</p>
+    </div>
+  </footer>
+
+  <script src="./../script.js"></script>
+</body>
+
+</html>
