@@ -1512,6 +1512,73 @@ a#name:focus {
 
 @media only screen and (max-width: 576px) {
 
+
+  /* HOME page - S */
+
+  .header-container .logo {
+    display: none;
+  }
+
+  .about-container #info p {
+    font-size: 14px;
+    /* margin: 0 0 15px; */
+  }
+
+  div.about-container {
+    margin: 0;
+    padding: 0;
+    /* background-color: #000; */
+  }
+
+  .about-container #info {
+    padding: 10px;
+  }
+
+
+  /* HOME - #links S */
+
+  div.about-container #links {
+    margin: 0;
+    padding: 0;
+  }
+
+  div.about-container #links .icon-row ul {
+    display: flex;
+    flex-direction: row;
+  }
+
+  div.about-container #drop-mail {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    /* margin-top: 10px; */
+    margin-bottom: 50px;
+  }
+
+  div.about-container #links #drop-mail i {
+    margin-bottom: 20px;
+  }
+
+  div.about-container #links #drop-mail a {
+    font-size: 18px;
+
+  }
+
+
+
+  /* HOME - Links E */
+
+
+  #drop-mail a {
+    padding-right: 15px;
+    /* padding-right: 100px; */
+    font-size: 2px;
+  }
+
+  /* HOME page - E */
+
+
+
   section.typed-text h1 {
     font-size: 30px;
   }
@@ -1536,16 +1603,6 @@ a#name:focus {
     margin-top: 15%;
   }
 
-  .about-container #info {
-    padding-right: 10%;
-  }
-
-
-  #drop-mail a {
-    padding: 5px;
-    /* padding-right: 100px; */
-    font-size: 2px;
-  }
 
   /* Skills */
 
