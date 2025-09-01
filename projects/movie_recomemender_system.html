@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project 3: Movie Recommendation System</title>
+
+    <!-- Fonts & CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=GFS+Didot&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../style.css" />
+</head>
+
+<body class="movie-recommendation">
+    <!-- Header -->
+    <header>
+        <div class="header-container">
+            <section class="logo">
+                <a href="../index.html"><strong>abhithombare45</strong></a>
+            </section>
+            <ul class="desktop-view">
+                <li class="dropdown">
+                    <a href="./../projects.html">Projects</a>
+                </li>
+            </ul>
+
+            <!-- Menu Button -->
+            <div class="menu-icon" onclick="toggleMenu()">
+                <i id="menu-toggle-icon" class="fa-solid fa-bars"></i>
+            </div>
+
+            <!-- Menu Area -->
+            <ul class="menu-area">
+                <li><a href="./../projects.html">Projects</a></li>
+                <li><a href="./../skills.html">Skills</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Project Main Section -->
+    <main class="project-main">
+        <div class="project-header">
+            <div class="project-logo">
+                <img src="../assets/images/movie_recommendation_logo.jpg" alt="Project Logo" />
+            </div>
+            <div class="project-title">
+                <h1>Project 3: Movie Recommendation System</h1>
+            </div>
+        </div>
+
+        <div class="project-description">
+            <p>
+                This project is a **content-based Movie Recommendation System** that suggests the top-5 movies similar
+                to a user’s input.
+                It combines **machine learning (cosine similarity on text embeddings)** with real-time **TMDB API
+                integration** to fetch posters and movie details.
+            </p>
+
+            <p>
+                Users can type a movie name, get intelligent suggestions (via fuzzy matching), and instantly see
+                recommended movies with their **posters, release year, and overview**.
+                The system is deployed as a **Flask web application** and integrated with Hugging Face Hub for model +
+                dataset hosting.
+            </p>
+
+            <p>Key highlights include:</p>
+            <ul>
+                <li>Dataset of 5,000+ movies with tags built from title, genres, keywords, cast, crew</li>
+                <li>Feature engineering with <strong>TF-IDF embeddings</strong> and <strong>cosine similarity</strong>
+                </li>
+                <li>Fuzzy matching for better handling of spelling variations</li>
+                <li>Live integration with <strong>TMDB API</strong> for fetching posters and metadata</li>
+                <li>Trending movies section for user engagement</li>
+                <li>Deployed Flask app with Hugging Face Spaces (Gunicorn server)</li>
+            </ul>
+
+            <a href="https://github.com/abhithombare45/movie_recommendation" target="_blank" class="btn-project">View on
+                GitHub</a>
+            <a href="https://huggingface.co/spaces/abhithombare45/movie-recommendation" target="_blank"
+                class="btn-project">Live Demo</a>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <p>© Abhijeet Thombare 2025</p>
+        </div>
+    </footer>
+
+    <script src="./../script.js"></script>
+</body>
+
+</html>
