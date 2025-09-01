@@ -1104,7 +1104,7 @@ a#name:focus {
 
 .skill-card:hover i {
   padding-left: 50px;
-  transform: scale(1.5);
+  transform: scale(0.8);
   /* slight zoom with bounce */
 }
 
