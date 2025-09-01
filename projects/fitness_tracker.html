@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Project 1: Bangalore House Price Prediction</title>
+
+  <!-- Fonts & CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=GFS+Didot&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
+    rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=GFS+Didot&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="../style.css" />
+</head>
+
+<body class="BHPP">
+  <!-- Header -->
+  <header>
+    <div class="header-container">
+      <section class="logo">
+        <a href="../index.html"><strong>abhithombare45</strong></a>
+      </section>
+      <ul class="desktop-view">
+        <li class="dropdown">
+          <a href="./../projects.html" id="project-button" href="#" aria-haspopup="true"
+            aria-expanded="false">Projects</a>
+          <div class="dropdown-content">
+            <!-- <div class="dropdown-column-ML"> -->
+            <div class="dropdown-column">
+              <h3>ML Projects</h3>
+              <a href="projects/BHPP.html">House Price Prediction</a>
+              <a href="projects/project2.html" target="_blank">House Price Prediction</a>
+              <a href="projects/project3.html" target="_blank">House Price Prediction</a>
+            </div>
+            <!-- <div class="dropdown-column-NLP"> -->
+            <div class="dropdown-column">
+              <h3>NLP Projects</h3>
+              <a href="projects/project4.html" target="_blank">House Price Prediction</a>
+              <a href="projects/project5.html" target="_blank">House Price Prediction</a>
+              <a href="projects/project6.html" target="_blank">House Price Prediction</a>
+            </div>
+            <!-- <div class="dropdown-column-LLM"> -->
+            <div class="dropdown-column">
+              <h3>Gen AI & LLM Projects</h3>
+              <a href="projects/project7.html" target="_blank">House Price Prediction</a>
+              <a href="projects/project8.html" target="_blank">House Price Prediction</a>
+              <a href="projects/project9.html" target="_blank">House Price Prediction</a>
+              <a href="projects/project10.html" target="_blank">House Price Prediction</a>
+            </div>
+            <div class="dropdown-column">
+              <h3>Time Series Projects</h3>
+              <a href="projects/project7.html" target="_blank">House Price Prediction</a>
+              <a href="projects/project8.html" target="_blank">House Price Prediction</a>
+              <a href="projects/project9.html" target="_blank">House Price Prediction</a>
+              <a href="projects/project10.html" target="_blank">House Price Prediction</a>
+            </div>
+          </div>
+        </li>
+      </ul>
+
+      <!-- Menu Button -->
+      <div class="menu-icon" onclick="toggleMenu()">
+        <i id="menu-toggle-icon" class="fa-solid fa-bars"></i>
+      </div>
+
+      <!-- Menu Area -->
+      <ul class="menu-area">
+        <!-- <li><a href="./../index.html">Home</a></li> -->
+        <li><a href="./../projects.html">Projects</a></li>
+        <li><a href="./../skills.html">Skills</a></li>
+      </ul>
+
+
+    </div>
+  </header>
+
+  <!-- Project Main Section -->
+  <main class="project-main">
+    <div class="project-header">
+      <div class="project-logo">
+        <img src="../assets/images/fitness_tracker_logo.jpg" alt="Project Logo" />
+      </div>
+      <div class="project-title">
+        <h1>Project 2: Tracking Barbell Exercises</h1>
+      </div>
+    </div>
+
+    <div class="project-description">
+      <p>
+        This mini Master’s project focuses on analyzing wearable sensor data to classify
+        barbell exercises, count repetitions, and detect improper exercise form. Data from accelerometer and gyroscope
+        sensors in Fitbit bands worn during gym workouts is processed through a robust pipeline including outlier
+        removal, smoothing, temporal aggregation, frequency analysis.
+      </p>
+      <p>
+        Feature engineering with <strong>PCA and clustering.</strong>
+        Machine learning models, mainly <strong>Random Forest, achieve 98.5% accuracy for exercise classification and
+          form detection, and 95% accuracy</strong> for repetition counting.
+
+        The project’s well-organized structure includes raw and processed data, notebooks for analysis, trained models,
+        and visualization scripts. It references the book “Machine Learning for the Quantified Self” and builds upon
+        research into context-aware strength training applications. Future work aims to expand datasets, integrate
+        additional sensors, and enable real-time feedback via smartwatches. This project demonstrates advanced use of
+        Python libraries such as pandas, numpy, scipy, scikit-learn, matplotlib, and seaborn for a sophisticated
+        AI-powered fitness tracking system.
+      </p>
+      <p>
+        Key highlights include:
+      </p>
+      <ul>
+        <li>Accelerometer and gyroscope data collection using Meta Motion sensors</li>
+        <li>Data preprocessing: outlier removal, smoothing, temporal aggregation, frequency analysis</li>
+        <li>Feature engineering with PCA, clustering, and scalar motion magnitudes</li>
+        <li>Machine learning models for exercise classification (98.5% accuracy), repetition counting (~95%), and form
+          detection (98.5%)</li>
+        <li>Organized project structure: data versions, notebooks, trained models, and visualization scripts</li>
+        <li>Integration of advanced Python libraries such as pandas, scikit-learn, matplotlib, and seaborn</li>
+        <li>Inspired by research on context-aware strength training applications</li>
+        <li>Future-ready for real-time tracking and expanded sensor integration</li>
+      </ul>
+      <a href="https://github.com/abhithombare45/fitness_tracker" target="_blank" class="btn-project">View on
+        GitHub</a>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-container">
+      <p>© Abhijeet Thombare 2025</p>
+    </div>
+  </footer>
+
+  <script src="./../script.js"></script>
+</body>
+
+</html>
