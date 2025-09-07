@@ -1513,6 +1513,12 @@ a#name:focus {
 @media only screen and (max-width: 576px) {
 
 
+  header:hover {
+    background: none;
+    box-shadow: none;
+    border: none;
+  }
+
   /* HOME page - S */
 
   .header-container .logo {
