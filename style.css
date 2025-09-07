@@ -154,10 +154,10 @@ header nav ul li a {
 .menu-area {
   position: fixed;
   top: -5%;
-  /* hidden above screen */
-  left: 50%;
-  transform: translateX(-50%);
-  width: 80%;
+  /* transform: translateX(-50%); */
+  /* transform: translateX(-5%); */
+
+
   height: 10%;
   /* adjust height of menu */
   background: black;
@@ -172,14 +172,22 @@ header nav ul li a {
   pointer-events: none;
   border-radius: 6px;
 
-  transition: all 0.4s ease-in-out;
+  /* transition: all 0.4s ease-in-out; */
+  height: 0;
+  overflow: hidden;
+  transition: height 0.7s cubic-bezier(0.77, 0, 0.175, 1);
+
   /* z-index: 1000; */
+  left: 100px;
+  right: 10px;
+  width: auto;
+  /* transform: none; */
 }
 
 /* Active state (visible) */
 .menu-area.active {
   /* top: 60px; */
-  top: 25px;
+  top: 120px;
   z-index: 999;
 
   /* slides down from header */
@@ -1517,8 +1525,72 @@ a#name:focus {
     background: none;
     box-shadow: none;
     border: none;
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
   }
 
+
+  /* ################## */
+
+  .menu-icon {
+    /* display: none;
+    position: relative;
+    z-index: 1100;
+    font-size: 30px;
+    cursor: pointer;
+    background: black;
+    color: beige;
+    padding: 6px 15px;
+    border-radius: 8px; */
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    z-index: 1000000
+  }
+
+  /* ########## Mobile Menu ########## */
+  .menu-area {
+
+    /* z-index: 1000; */
+    /* left: 10px;
+    right: 10px;
+    width: auto;
+    transform: none; */
+  }
+
+  /* Active state (visible) */
+  .menu-area.active {
+    /* top: 60px; */
+    top: 25px;
+    z-index: 999;
+
+    /* slides down from header */
+    opacity: 1;
+    pointer-events: auto;
+
+  }
+
+
+  .menu-area li {
+    display: flex;
+  }
+
+  /* Menu items */
+  .menu-area li a {
+    color: beige;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 100px;
+    /* margin-top: 50px; */
+    /* transition: background 0.3s ease; */
+  }
+
+  .menu-area li a:hover {
+    background: gray;
+    border-radius: 4px;
+  }
+
+  /* ##################  */
   /* HOME page - S */
 
   .header-container .logo {
