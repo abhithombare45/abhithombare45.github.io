@@ -18,7 +18,7 @@ body {
 
 
 .header-container {
-  max-width: 90%;
+  max-width: 98%;
   margin: auto;
   display: flex;
   align-items: center;
@@ -64,6 +64,13 @@ header:hover {
   /* soft border */
 }
 
+
+header div.header-container {
+  /* background-color: yellow; */
+  display: flex;
+  justify-content: space-between;
+}
+
 header section.logo {
   font-size: 26px;
   color: purple;
@@ -80,7 +87,8 @@ header section.logo a {
 header nav ul {
   list-style-type: none;
   margin: 0;
-  padding-right: 250px;
+  padding-right: 10px;
+  padding: 0;
   /* padding: 300px; */
   /* adding space behind the contact link in header */
 }
@@ -94,16 +102,16 @@ header nav ul {
 
 
 .desktop-view li:last-of-type {
-  padding-right: 200px;
+  padding-right: 20px;
 }
 
 
-header nav ul li.menu-icon {
+/* header nav ul li.menu-icon {
   display: none;
-}
+} */
 
 header nav ul li:last-of-type {
-  margin-right: 0;
+  margin-right: 10px;
 }
 
 header nav ul li a {
@@ -115,7 +123,15 @@ header nav ul li a {
 
 
 
-
+header nav.all-header-options {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  /* padding-left: 200px; */
+  /* padding: 0 20px; */
+  background-color: transparent;
+}
 
 
 
@@ -139,66 +155,143 @@ header nav ul li a {
 
 .menu-icon {
   display: none;
-  position: relative;
+  display: inline-block;
+  /* position: relative; */
   z-index: 1100;
   font-size: 30px;
   cursor: pointer;
   background: black;
   color: beige;
   padding: 6px 15px;
+  /* width: auto; */
   /* padding: 4px 10px 4px 0px; */
   border-radius: 8px;
 }
 
 /* ########## Mobile Menu ########## */
-.menu-area {
+/* .menu-area {
   position: fixed;
   top: -5%;
-  /* transform: translateX(-50%); */
-  /* transform: translateX(-5%); */
-
 
   height: 10%;
-  /* adjust height of menu */
+
   background: black;
   color: beige;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  /* gap: 30px; */
+
   list-style: none;
   opacity: 0;
   pointer-events: none;
   border-radius: 6px;
 
-  /* transition: all 0.4s ease-in-out; */
-  height: 0;
+  max-height: 0;
+  opacity: 0;
   overflow: hidden;
-  transition: height 0.7s cubic-bezier(0.77, 0, 0.175, 1);
+  transition: max-height 0.7s cubic-bezier(0.77, 0, 0.175, 1),
+    opacity 0.5s ease-in-out;
 
-  /* z-index: 1000; */
-  left: 100px;
-  right: 10px;
+} */
+
+/* .menu-area {
+  position: fixed;
+  top: 120px;
+  left: 10px;
+  right: 5px;
   width: auto;
-  /* transform: none; */
+  height: auto;
+
+  background: black;
+  color: beige;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  list-style: none;
+  border-radius: 6px;
+  overflow: hidden;
+
+
+  max-height: 0;
+
+
+  transform: scaleY(0);
+  transform-origin: top;
+
+  opacity: 0;
+  pointer-events: none;
+  transition: max-height 0.7s cubic-bezier(0.77, 0, 0.175, 1),
+    opacity 0.4s ease;
+} */
+
+
+.menu-area {
+  max-height: 0;
+  overflow: hidden;
+  background: black;
+  color: beige;
+  transition: max-height 1.0s cubic-bezier(0.77, 0, 0.175, 1);
+}
+
+.menu-area.active {
+  max-height: 400px;
+  /* Adjust based on content */
+}
+
+.menu-area {
+  position: fixed;
+  top: 7%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* true centering */
+  width: 100%;
+  /* adjust width */
+  max-width: 350px;
+  /* optional */
+  text-align: center;
+  border-radius: 8px;
+}
+
+.menu-area.active {
+  max-height: 400px;
 }
 
 /* Active state (visible) */
-.menu-area.active {
-  /* top: 60px; */
+/* .menu-area.active {
   top: 120px;
   z-index: 999;
+  max-height: 500px;
 
-  /* slides down from header */
+  pointer-events: auto;
+
+  transform: scaleY(1);
   opacity: 1;
   pointer-events: auto;
 
-}
+} */
 
+.menu-area {
+  display: flex;
+  flex-direction: column;
+  /* vertical stacking */
+  align-items: center;
+  /* center horizontally */
+  justify-content: center;
+  /* center vertically if needed */
+  gap: 15px;
+  /* spacing between items */
+}
 
 .menu-area li {
   display: flex;
+  display: block;
+  /* let them stack */
+  width: 100%;
+  /* optional: full width clickable */
+  text-align: center;
 }
 
 /* Menu items */
@@ -504,16 +597,25 @@ footer p {
 footer div.footer-container p {
   margin: 0%;
   /* color: blue; */
-  /* background-color:  */
+  /* background-color: yellow; */
 }
 
 .footer-container i {
   padding-right: 10px;
+  /* background-color: yellow; */
+
 }
 
 
 
 
+footer p {
+  display: flex;
+  align-items: baseline;
+  /* background-color: black; */
+  justify-content: center;
+  height: 10px;
+}
 
 
 
@@ -719,25 +821,25 @@ footer div.footer-container p {
   font-family: "Roboto Mono", monospace;
 }
 
-/* body.BHPP .header-container ul.desktop-view {
+/* body.individual-project-page .header-container ul.desktop-view {
   padding-right: 400px;
 } */
 
-/* body.BHPP #project-button {
+/* body.individual-project-page #project-button {
   margin-left: -200px;
 }
 
-body.BHPP #project-button:hover {
+body.individual-project-page #project-button:hover {
   margin-left: -200px;
 } */
 
 
-body.BHPP .header-container #project-button {
+body.individual-project-page .header-container #project-button {
   /* padding-right: 400px; */
   width: 0;
 }
 
-body.BHPP .dropdown-content {
+body.individual-project-page .dropdown-content {
   background: rgba(255, 255, 255, 0.2);
   /* semi-transparent */
   border-radius: 16px;
@@ -753,7 +855,7 @@ body.BHPP .dropdown-content {
 }
 
 
-body.BHPP .project-header {
+body.individual-project-page .project-header {
   display: flex;
   align-items: center;
   justify-content: flex-start;
@@ -1027,6 +1129,8 @@ a#name {
   color: inherit;
   /* padding-right: 10%; */
   margin-right: 20%;
+  margin-right: 0;
+
   /* keeps the same color as surrounding text */
 }
 
@@ -1206,7 +1310,7 @@ a#name:focus {
 
 
   header nav ul {
-    padding-right: 300px;
+    padding-right: 30px;
   }
 
 
@@ -1249,14 +1353,15 @@ a#name:focus {
   /* BHPP  */
 
 
-  /* body.BHPP .header-container ul.desktop-view {
+  /* body.individual-project-page .header-container ul.desktop-view {
     padding-right: 450px;
   } */
 
 
 }
 
-
+/* ################################# */
+/*          Small Desktop            */
 /* ################################# */
 /* add for header changes */
 /* ################################# */
@@ -1264,12 +1369,28 @@ a#name:focus {
 @media only screen and (min-width: 960px) and (max-width: 1150px) {
 
 
+  .header-container .logo {
+    font-size: 22px;
+  }
+
   header nav ul {
     padding-right: 50px;
   }
 
   header nav ul.desktop-view {
-    display: none;
+    display: inline-block;
+  }
+
+  header nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding-right: 50px;
+  }
+
+  .desktop-view li {
+    display: inline-block;
+    margin-right: 26px;
+
   }
 
   /* .dropdown {
@@ -1302,8 +1423,8 @@ a#name:focus {
 
   /* new code  */
   .menu-icon {
-    display: inline-block;
-    /* need change here  */
+    /* display: inline-block; */
+    display: none;
   }
 
   .menu-area {
@@ -1332,12 +1453,12 @@ a#name:focus {
 
 
   /* BHPP  */
-  body.BHPP a#project-button {
+  body.individual-project-page a#project-button {
     display: none;
   }
 
 
-  /* body.BHPP .header-container ul.desktop-view {
+  /* body.individual-project-page .header-container ul.desktop-view {
     padding-right: 400px !important;
   } */
 
@@ -1352,6 +1473,28 @@ a#name:focus {
 /* ################################# */
 
 @media only screen and (max-width: 960px) {
+
+
+  header:hover {
+    background: none;
+    box-shadow: none;
+    /* border: none; */
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+  }
+
+  .header-container .logo {
+    /* display: none; */
+    font-size: 18px;
+  }
+
+  .menu-icon {
+    font-size: 20px;
+    position: absolute;
+    right: 20px;
+    top: 1px;
+    z-index: 1000000
+  }
 
 
   /* .dropdown .dropdown-content {
@@ -1524,7 +1667,7 @@ a#name:focus {
   header:hover {
     background: none;
     box-shadow: none;
-    border: none;
+    /* border: none; */
     backdrop-filter: none;
     -webkit-backdrop-filter: none;
   }
@@ -1532,69 +1675,44 @@ a#name:focus {
 
   /* ################## */
 
-  .menu-icon {
-    /* display: none;
-    position: relative;
-    z-index: 1100;
-    font-size: 30px;
-    cursor: pointer;
-    background: black;
-    color: beige;
-    padding: 6px 15px;
-    border-radius: 8px; */
+  /* .menu-icon {
     position: absolute;
     right: 20px;
-    top: 20px;
+    top: 1px;
     z-index: 1000000
-  }
+  } */
 
   /* ########## Mobile Menu ########## */
-  .menu-area {
-
-    /* z-index: 1000; */
-    /* left: 10px;
-    right: 10px;
+  /* .menu-area {
+    top: 120px;
+    left: 10px;
+    right: 200px;
     width: auto;
-    transform: none; */
+    height: 10%;
+
   }
 
-  /* Active state (visible) */
   .menu-area.active {
-    /* top: 60px; */
-    top: 25px;
     z-index: 999;
-
-    /* slides down from header */
+    max-height: 700px;
     opacity: 1;
     pointer-events: auto;
 
-  }
+
+    transition:
+      max-height 1.0s cubic-bezier(0.77, 0, 0.175, 1),
+      opacity 0.4s ease;
+
+  } */
 
 
-  .menu-area li {
-    display: flex;
-  }
-
-  /* Menu items */
-  .menu-area li a {
-    color: beige;
-    text-decoration: none;
-    font-size: 18px;
-    padding: 10px 100px;
-    /* margin-top: 50px; */
-    /* transition: background 0.3s ease; */
-  }
-
-  .menu-area li a:hover {
-    background: gray;
-    border-radius: 4px;
-  }
 
   /* ##################  */
   /* HOME page - S */
 
   .header-container .logo {
-    display: none;
+    /* display: none; */
+    font-size: 14;
   }
 
   .about-container #info p {
@@ -1680,6 +1798,35 @@ a#name:focus {
   .projects-list h1 {
     margin-top: 15%;
   }
+
+
+  /* #################
+   project page  
+   ################# */
+
+  /* div.project-description a {} */
+
+  body.projects-page-body footer {
+    position: sticky;
+    /* or static (default) */
+    width: 100%;
+    height: 50px;
+    margin-top: auto;
+    /* pushes footer down if flex layout used */
+  }
+
+  body.individual-project-page footer {
+    position: sticky;
+    /* or static (default) */
+    width: 100%;
+    height: 50px;
+    margin-top: auto;
+  }
+
+  div.project-description
+  /* #################
+   project page  - END
+   ################# */
 
 
   /* Skills */

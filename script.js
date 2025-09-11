@@ -2,27 +2,36 @@
 console.log("Portfolio loaded successfully!");
 
 
+document.addEventListener("DOMContentLoaded", () => {
+    const menuIcon = document.querySelector(".menu-icon");
+    const menuArea = document.querySelector(".menu-area");
 
-function toggleMenu() {
-    const menu = document.querySelector(".menu-area");
-    // const icon = document.querySelector(".menu-icon");
+    menuIcon.addEventListener("click", () => {
+        menuArea.classList.toggle("active");
+    });
+});
 
-    // Toggle active class
-    menu.classList.toggle("active");
 
-    // Change icon between ☰ and ✖
+// function toggleMenu() {
+//     const menu = document.querySelector(".menu-area");
+//     // const icon = document.querySelector(".menu-icon");
 
-    if (menu.classList.contains("active")) {
-        icon.classList.remove("fa-bars");
-        icon.classList.add("fa-xmark");
-        icon.classList.add("fa-solid");  // ensure correct style
-    } else {
-        icon.classList.remove("fa-xmark");
-        icon.classList.add("fa-bars");
-        icon.classList.add("fa-solid");  // ensure correct style
-    }
+//     // Toggle active class
+//     menu.classList.toggle("active");
 
-}
+//     // Change icon between ☰ and ✖
+
+//     if (menu.classList.contains("active")) {
+//         icon.classList.remove("fa-bars");
+//         icon.classList.add("fa-xmark");
+//         icon.classList.add("fa-solid");  // ensure correct style
+//     } else {
+//         icon.classList.remove("fa-xmark");
+//         icon.classList.add("fa-bars");
+//         icon.classList.add("fa-solid");  // ensure correct style
+//     }
+
+// }
 
 
 // ✅ New ML Projects toggle logic
