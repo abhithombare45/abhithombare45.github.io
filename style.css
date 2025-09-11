@@ -1215,7 +1215,7 @@ a#name:focus {
 }
 
 .skill-card:hover i {
-  padding-left: 50px;
+  padding-left: 10px;
   transform: scale(0.8);
   /* slight zoom with bounce */
 }
@@ -1638,7 +1638,6 @@ a#name:focus {
     font-size: 15px;
     display: flex;
     flex-direction: column;
-    align-items: center;
   }
 
 
@@ -1843,29 +1842,51 @@ a#name:focus {
   }
 
   .skill-card i {
-    padding: 10px;
+    /* padding: 10px; */
+    display: flex;
+    width: 50%;
   }
 
   .skill-card h3 {
     /* padding: 10px; */
-    font-size: 20px;
+    font-size: 14px;
     align-items: center;
+    background: rgba(0, 0, 0, 0);
   }
 
   .skill-card .skill-info {
-    padding: 10px;
+    /* padding: 10px;
     padding-right: 0px;
-    margin-left: 30px;
+    margin-left: 10px; */
     font-size: 15px;
+    width: 80%;
+    padding: 0;
+    margin: 0;
+    /* background: rgba(0, 0, 0, 0); */
+    /* background-color: yellow; */
   }
 
   .skill-card i {
-    transition: transform 0.2s ease-in-out;
+    font-size: 2rem;
+    color: #333;
+    opacity: 1;
+    background-color: yellow;
+    display: none;
+    /* transition: opacity 0.4s ease, visibility 0.4s ease; */
   }
 
-  .skill-card:hover i {
-    transform: scale(1);
-    /* slight zoom with bounce */
-  }
+  /* .skill-card i {
+    opacity: 0;
+    visibility: hidden;
+    display: none;
+    background-color: yellow;
+  } */
+
+
+
+  /* .skill-card:hover i {
+    transform: scale(0.5); */
+  /* slight zoom with bounce */
+  /* } */
 
 }

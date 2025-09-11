@@ -94,6 +94,16 @@ document.addEventListener("DOMContentLoaded", () => {
 //     }
 // });
 
+
+// for skill-card i{]} 
+// icon on card
+
+
+
+
+
+
+
 window.addEventListener("scroll", function () {
     const header = document.querySelector("header");
     if (window.scrollY > 50) {
